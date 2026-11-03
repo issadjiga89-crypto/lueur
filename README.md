@@ -2,6 +2,17 @@
 
 Une invite de commande stylée et rapide pour **Termux** (Android), en bash pur.
 
+> [!IMPORTANT]
+> **Vous êtes en v1 ?** Passez à la v2 (invite bien plus rapide, nouvelles versions signalées) avec une seule commande dans Termux :
+>
+> ```bash
+> curl -fsSL https://github.com/issadjiga89-crypto/lueur/releases/latest/download/install.sh | bash
+> ```
+>
+> La mise à jour conserve vos réglages et le reste de votre `~/.bashrc`, et sauvegarde d'abord tout dans `~/.lueur-installations/`.
+>
+> Pour savoir quelle version vous avez : `grep -q __lueur_version ~/.lueur/prompt.sh 2>/dev/null && echo v2 || echo v1`
+
 ```
 ╭─ 00:41 ─ ~/projet ‹main ✱› ⏱ 12s
 ╰─❯
@@ -12,7 +23,7 @@ Une invite de commande stylée et rapide pour **Termux** (Android), en bash pur.
 Dans Termux :
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/issadjiga89-crypto/lueur/main/install.sh | bash
+curl -fsSL https://github.com/issadjiga89-crypto/lueur/releases/latest/download/install.sh | bash
 ```
 
 Ouvre ensuite une nouvelle session Termux.
